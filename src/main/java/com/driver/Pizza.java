@@ -47,7 +47,7 @@ public class Pizza {
         // your code goes here
         if(!istoppingscalled)
         {
-            this.ischeesecalled = true;
+            this.istoppingscalled = true;
             if(this.isVeg)
             {
                 this.price += vegtopping;
