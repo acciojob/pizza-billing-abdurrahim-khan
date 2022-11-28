@@ -89,8 +89,8 @@ public class Pizza {
                 this.bill += takeawaybill;
             //}
             this.bill += "Total Price: "+this.price+"\n";
-            return this.bill;
+
         }
-        return "";
+        return this.bill;
     }
 }
