@@ -8,6 +8,7 @@ public class Pizza {
     private final int vegtopping = 70;
     private final int nonvegtopping = 120;
 
+    int bagprice = 0;
     private String cheesetoppingbill = "";
     private String takeawaybill = "";
 
@@ -64,12 +65,13 @@ public class Pizza {
 
     public void addTakeaway(){
         // your code goes here
-        if(!isbagcalled)
-        {
-            isbagcalled = true;
+        //if(!isbagcalled)
+        //{
+            //isbagcalled = true;
             this.price+=20;
-            takeawaybill = "Paperbag Added: "+20+"\n";
-        }
+            this.bagprice += 20;
+            takeawaybill = "Paperbag Added: "+bagprice+"\n";
+        //}
 
     }
 
@@ -82,10 +84,10 @@ public class Pizza {
             {
                 this.bill += cheesetoppingbill;
             }
-            if(takeawaybill.length() != 0)
-            {
+            //if(takeawaybill.length() != 0)
+            //{
                 this.bill += takeawaybill;
-            }
+            //}
             this.bill += "Total Price: "+this.price+"\n";
             return this.bill;
         }
